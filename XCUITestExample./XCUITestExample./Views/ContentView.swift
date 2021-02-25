@@ -18,7 +18,7 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 TextField("Login", text: $login)
-
+                    
                     .padding(10)
                     .font(Font.system(size: 15, weight: .medium, design: .serif))
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 1))
@@ -29,22 +29,24 @@ struct ContentView: View {
                     .font(Font.system(size: 15, weight: .medium, design: .serif))
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 1))
                     .padding()
-
-                NavigationLink(destination: Text("Second View"), isActive: $isShowingNextView) { EmptyView() }
-                Button("Login") {
-                    isShowingNextView = true
-                }
-                .disabled(enableButton())
-                .foregroundColor(.white)
-                .frame(width: 250, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .background(disabledColor())
-                .cornerRadius(8)
+                
+                NavigationLink(
+                    destination: SecondTestView(),
+                    isActive: $isShowingNextView,
+                    label: {
+                        Button("Login") {
+                            isShowingNextView = true
+                        }
+                        .disabled(enableButton())
+                        .foregroundColor(.white)
+                        .frame(width: 250, height: 50, alignment: .center)
+                        .background(disabledColor())
+                        .cornerRadius(8)
+                    })
+               
                 Spacer()
             }
-            
-            .ignoresSafeArea()
-
-            
+  
         }
 
     }
