@@ -13,10 +13,22 @@ struct SecondTestView: View {
     @State private var isShowingNextView = false
     var pickerValueArray = ["Test1","Test2","Test3","Test4","Test5","Test6" ]
     var body: some View {
+        
             VStack {
+                Form {
+                    Section {
+                        Picker(selection: $selectedIndex, label: Text("Favorite Framework")) {
+                            ForEach(0 ..< pickerValueArray.count) {
+                                Text(pickerValueArray[$0])
+                            }
+                        }
+                    }
+                }
+                .frame(width: 400, height: 100)
                 List {
+
                 VStack {
-                    Picker("Test PickerWheel", selection: $sliderValue) {
+                    Picker(selection: $selectedIndex, label: Text("Favorite Framework")) {
                         ForEach(0 ..< pickerValueArray.count) {
                             Text(pickerValueArray[$0])
                         }

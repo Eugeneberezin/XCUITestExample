@@ -27,9 +27,21 @@ class XCUITestExample_UITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-    
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let loginTextField = app.textFields["Login"]
+        loginTextField.tap()
+        loginTextField.typeText("dfsdfdfsdfsd")
+        app.textFields["Password"].tap()
+        sleep(2)
+        app.textFields["Password"].typeText("dfsdfsdfsdfsdf")
+        
+        app.buttons["Login"].tap()
+        
+        let test1PickerWheel = XCUIApplication().tables.pickerWheels["Test1"]
+        test1PickerWheel.adjust(toPickerWheelValue: "Test4")
+      
+        let slider = XCUIApplication().tables.sliders["0"]
+        slider.adjust(toNormalizedSliderPosition: 0.5)
+
     }
 
     func testLaunchPerformance() throws {
