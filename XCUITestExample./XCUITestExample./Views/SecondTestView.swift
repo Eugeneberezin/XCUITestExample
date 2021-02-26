@@ -42,7 +42,7 @@ struct SecondTestView: View {
                     }
                 }
                 
-                NavigationLink(destination: Text("Second View"), isActive: $isShowingNextView) { EmptyView() }
+                NavigationLink(destination: ScrollingView(), isActive: $isShowingNextView) { EmptyView() }
                 
                 Button("Go to the next Screen") {
                     isShowingNextView = true

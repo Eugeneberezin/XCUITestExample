@@ -8,32 +8,15 @@
 import XCTest
 
 class XCUITestExample_UITests: XCTestCase {
+    let app = XCUIApplication()
+    
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+        app.launch()
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-        let loginTextField = app.textFields["Login"]
-        loginTextField.tap()
-        loginTextField.typeText("dfsdfdfsdfsd")
-        app.textFields["Password"].tap()
-        sleep(2)
-        app.textFields["Password"].typeText("dfsdfsdfsdfsdf")
-        
         app.buttons["Login"].tap()
         
         let test1PickerWheel = XCUIApplication().tables.pickerWheels["Test1"]
@@ -43,6 +26,52 @@ class XCUITestExample_UITests: XCTestCase {
         slider.adjust(toNormalizedSliderPosition: 0.5)
 
     }
+    
+    func testHowToHandleTextFields() {
+        let loginTextField = app.textFields["Login"]
+        loginTextField.tap()
+        loginTextField.typeText("dfsdfdfsdfsd")
+        let passwordTextField = app.textFields["Password"]
+        passwordTextField.tap()
+        passwordTextField.typeText("TestPassword")
+    }
+    
+    func testHowToHandleButtons() {
+        let button = app.buttons["Login"]
+        XCTAssertTrue(!button.isEnabled)
+        let loginTextField = app.textFields["Login"]
+        loginTextField.tap()
+        loginTextField.typeText("dfsdfdfsdfsd")
+        let passwordTextField = app.textFields["Password"]
+        passwordTextField.tap()
+        passwordTextField.typeText("TestPassword")
+        XCTAssertTrue(button.isEnabled)
+        if button.isEnabled {
+            button.tap()
+        } else {
+            XCTFail("Button is not enabled")
+        }
+    }
+    
+    func testHowToHandleSliders() {
+        login()
+        let slider = XCUIApplication().tables.sliders["0"]
+        slider.adjust(toNormalizedSliderPosition: 0.5)
+        
+    }
+    
+    func testHowToHandleSwipeGestures() {
+        login()
+        
+        XCUIApplication().buttons["Go to the next Screen"].tap()
+        let hGrid = XCUIApplication().scrollViews.otherElements.otherElements["HGRID"]
+        hGrid.swipeLeft()
+        hGrid.swipeRight()
+        
+        let vGrid = XCUIApplication()/*@START_MENU_TOKEN@*/.scrollViews.containing(.other, identifier:"Vertical scroll bar, 4 pages")/*[[".scrollViews.containing(.other, identifier:\"Horizontal scroll bar, 1 page\")",".scrollViews.containing(.other, identifier:\"Vertical scroll bar, 4 pages\")"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .other).matching(identifier: "VGRID").element(boundBy: 2)
+        vGrid.swipeDown()
+        vGrid.swipeUp()
+    }
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
@@ -50,6 +79,25 @@ class XCUITestExample_UITests: XCTestCase {
             measure(metrics: [XCTApplicationLaunchMetric()]) {
                 XCUIApplication().launch()
             }
+        }
+    }
+}
+
+// THIS IS NOT PAGE OBJECT MODEL PART! CONVINIENCE EXTENSION!
+extension XCTestCase {
+    func login() {
+        let button = XCUIApplication().buttons["Login"]
+        let loginTextField = XCUIApplication().textFields["Login"]
+        loginTextField.tap()
+        loginTextField.typeText("dfsdfdfsdfsd")
+        let passwordTextField = XCUIApplication().textFields["Password"]
+        passwordTextField.tap()
+        passwordTextField.typeText("TestPassword")
+        XCTAssertTrue(button.isEnabled)
+        if button.isEnabled {
+            button.tap()
+        } else {
+            XCTFail("Button is not enabled")
         }
     }
 }

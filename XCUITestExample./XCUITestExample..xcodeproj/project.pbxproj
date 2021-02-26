@@ -16,6 +16,7 @@
 		0519185725DF5D7F0082F78E /* XCUITestExample_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519185625DF5D7F0082F78E /* XCUITestExample_Tests.swift */; };
 		0519186225DF5D7F0082F78E /* XCUITestExample_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519186125DF5D7F0082F78E /* XCUITestExample_UITests.swift */; };
 		0598167E25E73DB400D37AF6 /* SecondTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0598167D25E73DB400D37AF6 /* SecondTestView.swift */; };
+		059A960325E89A6A00239FF5 /* ScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A960225E89A6A00239FF5 /* ScrollingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0519186125DF5D7F0082F78E /* XCUITestExample_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestExample_UITests.swift; sourceTree = "<group>"; };
 		0519186325DF5D7F0082F78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0598167D25E73DB400D37AF6 /* SecondTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTestView.swift; sourceTree = "<group>"; };
+		059A960225E89A6A00239FF5 /* ScrollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				0519184325DF5D7E0082F78E /* ContentView.swift */,
 				0598167D25E73DB400D37AF6 /* SecondTestView.swift */,
+				059A960225E89A6A00239FF5 /* ScrollingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			files = (
 				0519184025DF5D7E0082F78E /* AppDelegate.swift in Sources */,
 				0519184225DF5D7E0082F78E /* SceneDelegate.swift in Sources */,
+				059A960325E89A6A00239FF5 /* ScrollingView.swift in Sources */,
 				0598167E25E73DB400D37AF6 /* SecondTestView.swift in Sources */,
 				0519184425DF5D7E0082F78E /* ContentView.swift in Sources */,
 			);
