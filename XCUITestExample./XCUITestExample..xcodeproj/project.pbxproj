@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050AD06125EC697F0090D28A /* ScrollingViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050AD06025EC697F0090D28A /* ScrollingViewScreen.swift */; };
+		0512FA8A25EC5F7700871C2E /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512FA8925EC5F7700871C2E /* LoginScreen.swift */; };
+		0512FA9325EC625900871C2E /* SeconTestViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512FA9225EC625900871C2E /* SeconTestViewScreen.swift */; };
 		0519184025DF5D7E0082F78E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519183F25DF5D7E0082F78E /* AppDelegate.swift */; };
 		0519184225DF5D7E0082F78E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519184125DF5D7E0082F78E /* SceneDelegate.swift */; };
 		0519184425DF5D7E0082F78E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519184325DF5D7E0082F78E /* ContentView.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050AD06025EC697F0090D28A /* ScrollingViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingViewScreen.swift; sourceTree = "<group>"; };
+		0512FA8925EC5F7700871C2E /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		0512FA9225EC625900871C2E /* SeconTestViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeconTestViewScreen.swift; sourceTree = "<group>"; };
 		0519183C25DF5D7E0082F78E /* XCUITestExample..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCUITestExample..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0519183F25DF5D7E0082F78E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0519184125DF5D7E0082F78E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0512FA8E25EC61EF00871C2E /* ScreenObjectModel */ = {
+			isa = PBXGroup;
+			children = (
+				0512FA8925EC5F7700871C2E /* LoginScreen.swift */,
+				0512FA9225EC625900871C2E /* SeconTestViewScreen.swift */,
+				050AD06025EC697F0090D28A /* ScrollingViewScreen.swift */,
+			);
+			path = ScreenObjectModel;
+			sourceTree = "<group>";
+		};
 		0519183325DF5D7E0082F78E = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +150,7 @@
 		0519186025DF5D7F0082F78E /* XCUITestExample.UITests */ = {
 			isa = PBXGroup;
 			children = (
+				0512FA8E25EC61EF00871C2E /* ScreenObjectModel */,
 				0519186125DF5D7F0082F78E /* XCUITestExample_UITests.swift */,
 				0519186325DF5D7F0082F78E /* Info.plist */,
 			);
@@ -300,7 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050AD06125EC697F0090D28A /* ScrollingViewScreen.swift in Sources */,
 				0519186225DF5D7F0082F78E /* XCUITestExample_UITests.swift in Sources */,
+				0512FA8A25EC5F7700871C2E /* LoginScreen.swift in Sources */,
+				0512FA9325EC625900871C2E /* SeconTestViewScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
