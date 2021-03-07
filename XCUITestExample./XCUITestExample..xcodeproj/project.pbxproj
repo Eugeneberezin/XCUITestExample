@@ -18,6 +18,8 @@
 		0519184C25DF5D7F0082F78E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0519184A25DF5D7F0082F78E /* LaunchScreen.storyboard */; };
 		0519185725DF5D7F0082F78E /* XCUITestExample_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519185625DF5D7F0082F78E /* XCUITestExample_Tests.swift */; };
 		0519186225DF5D7F0082F78E /* XCUITestExample_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519186125DF5D7F0082F78E /* XCUITestExample_UITests.swift */; };
+		053402A925F30D0100B9D893 /* XCUITestExample_UITestsYouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053402A825F30D0100B9D893 /* XCUITestExample_UITestsYouTube.swift */; };
+		053402BB25F317B400B9D893 /* XCUITestExample_UITestsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053402BA25F317B400B9D893 /* XCUITestExample_UITestsTest.swift */; };
 		0598167E25E73DB400D37AF6 /* SecondTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0598167D25E73DB400D37AF6 /* SecondTestView.swift */; };
 		059A960325E89A6A00239FF5 /* ScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A960225E89A6A00239FF5 /* ScrollingView.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,20 @@
 			remoteInfo = XCUITestExample.;
 		};
 		0519185E25DF5D7F0082F78E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0519183425DF5D7E0082F78E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0519183B25DF5D7E0082F78E;
+			remoteInfo = XCUITestExample.;
+		};
+		053402AB25F30D0100B9D893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0519183425DF5D7E0082F78E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0519183B25DF5D7E0082F78E;
+			remoteInfo = XCUITestExample.;
+		};
+		053402BD25F317B400B9D893 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0519183425DF5D7E0082F78E /* Project object */;
 			proxyType = 1;
@@ -57,6 +73,12 @@
 		0519185D25DF5D7F0082F78E /* XCUITestExample.UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCUITestExample.UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0519186125DF5D7F0082F78E /* XCUITestExample_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestExample_UITests.swift; sourceTree = "<group>"; };
 		0519186325DF5D7F0082F78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		053402A625F30D0100B9D893 /* XCUITestExample.UITestsYouTube.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCUITestExample.UITestsYouTube.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		053402A825F30D0100B9D893 /* XCUITestExample_UITestsYouTube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestExample_UITestsYouTube.swift; sourceTree = "<group>"; };
+		053402AA25F30D0100B9D893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		053402B825F317B400B9D893 /* XCUITestExample.UITestsTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCUITestExample.UITestsTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		053402BA25F317B400B9D893 /* XCUITestExample_UITestsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestExample_UITestsTest.swift; sourceTree = "<group>"; };
+		053402BC25F317B400B9D893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0598167D25E73DB400D37AF6 /* SecondTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTestView.swift; sourceTree = "<group>"; };
 		059A960225E89A6A00239FF5 /* ScrollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +105,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		053402A325F30D0100B9D893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		053402B525F317B400B9D893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +138,8 @@
 				0519183E25DF5D7E0082F78E /* XCUITestExample. */,
 				0519185525DF5D7F0082F78E /* XCUITestExample.Tests */,
 				0519186025DF5D7F0082F78E /* XCUITestExample.UITests */,
+				053402A725F30D0100B9D893 /* XCUITestExample.UITestsYouTube */,
+				053402B925F317B400B9D893 /* XCUITestExample.UITestsTest */,
 				0519183D25DF5D7E0082F78E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +150,8 @@
 				0519183C25DF5D7E0082F78E /* XCUITestExample..app */,
 				0519185225DF5D7F0082F78E /* XCUITestExample.Tests.xctest */,
 				0519185D25DF5D7F0082F78E /* XCUITestExample.UITests.xctest */,
+				053402A625F30D0100B9D893 /* XCUITestExample.UITestsYouTube.xctest */,
+				053402B825F317B400B9D893 /* XCUITestExample.UITestsTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +195,24 @@
 				0519186325DF5D7F0082F78E /* Info.plist */,
 			);
 			path = XCUITestExample.UITests;
+			sourceTree = "<group>";
+		};
+		053402A725F30D0100B9D893 /* XCUITestExample.UITestsYouTube */ = {
+			isa = PBXGroup;
+			children = (
+				053402A825F30D0100B9D893 /* XCUITestExample_UITestsYouTube.swift */,
+				053402AA25F30D0100B9D893 /* Info.plist */,
+			);
+			path = XCUITestExample.UITestsYouTube;
+			sourceTree = "<group>";
+		};
+		053402B925F317B400B9D893 /* XCUITestExample.UITestsTest */ = {
+			isa = PBXGroup;
+			children = (
+				053402BA25F317B400B9D893 /* XCUITestExample_UITestsTest.swift */,
+				053402BC25F317B400B9D893 /* Info.plist */,
+			);
+			path = XCUITestExample.UITestsTest;
 			sourceTree = "<group>";
 		};
 		0598167925E73D5700D37AF6 /* Views */ = {
@@ -223,6 +281,42 @@
 			productReference = 0519185D25DF5D7F0082F78E /* XCUITestExample.UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		053402A525F30D0100B9D893 /* XCUITestExample.UITestsYouTube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 053402AF25F30D0100B9D893 /* Build configuration list for PBXNativeTarget "XCUITestExample.UITestsYouTube" */;
+			buildPhases = (
+				053402A225F30D0100B9D893 /* Sources */,
+				053402A325F30D0100B9D893 /* Frameworks */,
+				053402A425F30D0100B9D893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				053402AC25F30D0100B9D893 /* PBXTargetDependency */,
+			);
+			name = XCUITestExample.UITestsYouTube;
+			productName = XCUITestExample.UITestsYouTube;
+			productReference = 053402A625F30D0100B9D893 /* XCUITestExample.UITestsYouTube.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		053402B725F317B400B9D893 /* XCUITestExample.UITestsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 053402BF25F317B400B9D893 /* Build configuration list for PBXNativeTarget "XCUITestExample.UITestsTest" */;
+			buildPhases = (
+				053402B425F317B400B9D893 /* Sources */,
+				053402B525F317B400B9D893 /* Frameworks */,
+				053402B625F317B400B9D893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				053402BE25F317B400B9D893 /* PBXTargetDependency */,
+			);
+			name = XCUITestExample.UITestsTest;
+			productName = XCUITestExample.UITestsTest;
+			productReference = 053402B825F317B400B9D893 /* XCUITestExample.UITestsTest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,6 +334,14 @@
 						TestTargetID = 0519183B25DF5D7E0082F78E;
 					};
 					0519185C25DF5D7F0082F78E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 0519183B25DF5D7E0082F78E;
+					};
+					053402A525F30D0100B9D893 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 0519183B25DF5D7E0082F78E;
+					};
+					053402B725F317B400B9D893 = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = 0519183B25DF5D7E0082F78E;
 					};
@@ -261,6 +363,8 @@
 				0519183B25DF5D7E0082F78E /* XCUITestExample. */,
 				0519185125DF5D7F0082F78E /* XCUITestExample.Tests */,
 				0519185C25DF5D7F0082F78E /* XCUITestExample.UITests */,
+				053402A525F30D0100B9D893 /* XCUITestExample.UITestsYouTube */,
+				053402B725F317B400B9D893 /* XCUITestExample.UITestsTest */,
 			);
 		};
 /* End PBXProject section */
@@ -284,6 +388,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0519185B25DF5D7F0082F78E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		053402A425F30D0100B9D893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		053402B625F317B400B9D893 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,6 +442,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		053402A225F30D0100B9D893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				053402A925F30D0100B9D893 /* XCUITestExample_UITestsYouTube.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		053402B425F317B400B9D893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				053402BB25F317B400B9D893 /* XCUITestExample_UITestsTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -336,6 +470,16 @@
 			isa = PBXTargetDependency;
 			target = 0519183B25DF5D7E0082F78E /* XCUITestExample. */;
 			targetProxy = 0519185E25DF5D7F0082F78E /* PBXContainerItemProxy */;
+		};
+		053402AC25F30D0100B9D893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0519183B25DF5D7E0082F78E /* XCUITestExample. */;
+			targetProxy = 053402AB25F30D0100B9D893 /* PBXContainerItemProxy */;
+		};
+		053402BE25F317B400B9D893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0519183B25DF5D7E0082F78E /* XCUITestExample. */;
+			targetProxy = 053402BD25F317B400B9D893 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -587,6 +731,82 @@
 			};
 			name = Release;
 		};
+		053402AD25F30D0100B9D893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JGX8KL9J9F;
+				INFOPLIST_FILE = XCUITestExample.UITestsYouTube/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eugeneiosDev.XCUITestExample-UITestsYouTube";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XCUITestExample.;
+			};
+			name = Debug;
+		};
+		053402AE25F30D0100B9D893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JGX8KL9J9F;
+				INFOPLIST_FILE = XCUITestExample.UITestsYouTube/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eugeneiosDev.XCUITestExample-UITestsYouTube";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XCUITestExample.;
+			};
+			name = Release;
+		};
+		053402C025F317B400B9D893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JGX8KL9J9F;
+				INFOPLIST_FILE = XCUITestExample.UITestsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eugeneiosDev.XCUITestExample-UITestsTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XCUITestExample.;
+			};
+			name = Debug;
+		};
+		053402C125F317B400B9D893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JGX8KL9J9F;
+				INFOPLIST_FILE = XCUITestExample.UITestsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eugeneiosDev.XCUITestExample-UITestsTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XCUITestExample.;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -622,6 +842,24 @@
 			buildConfigurations = (
 				0519186D25DF5D7F0082F78E /* Debug */,
 				0519186E25DF5D7F0082F78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		053402AF25F30D0100B9D893 /* Build configuration list for PBXNativeTarget "XCUITestExample.UITestsYouTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				053402AD25F30D0100B9D893 /* Debug */,
+				053402AE25F30D0100B9D893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		053402BF25F317B400B9D893 /* Build configuration list for PBXNativeTarget "XCUITestExample.UITestsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				053402C025F317B400B9D893 /* Debug */,
+				053402C125F317B400B9D893 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -14,8 +14,21 @@ class XCUITestExample_UITests: XCTestCase {
     override func setUpWithError() throws {
         app.launch()
         continueAfterFailure = false
+        
+        addUIInterruptionMonitor(withDescription: "System Dialog") {
+             (alert) -> Bool in
+             alert.buttons["Allow"].tap()
+             return true
+         }
+    
     }
-
+    
+    override func tearDownWithError() throws {
+        app.terminate()
+    }
+    
+   
+    
     func testHowToHandleTextFields() {
         let loginTextField = app.textFields["Login"]
         loginTextField.tap()
@@ -48,6 +61,12 @@ class XCUITestExample_UITests: XCTestCase {
         slider.adjust(toNormalizedSliderPosition: 0.5)
     }
     
+    func testHowToHandlePicker() {
+        login()
+        let picker = XCUIApplication().tables.pickerWheels["Test1"]
+        picker.adjust(toPickerWheelValue: "Test4")
+    }
+    
     func testHowToHandleSwipeGestures() {
         login()
         XCUIApplication().buttons["Go to the next Screen"].tap()
@@ -62,7 +81,7 @@ class XCUITestExample_UITests: XCTestCase {
     
     func testLoginWithPageObjectModel() {
         LoginScreen.login(login: "TestLogin", password: "TestPassword")
-        XCTAssert(SeconTextViewScreen.Sliders.slider.waitForExistence(timeout: 5))
+        waitFor(element: SeconTextViewScreen.Sliders.slider, timeout: 5)
         SeconTextViewScreen.adjust(toNormalizedSliderPosition: 0.5)
         XCTAssert(SeconTextViewScreen.StaticText.label.exists)
         SeconTextViewScreen.adjust(toPickerWheelValue: "Test4")
@@ -92,5 +111,9 @@ extension XCTestCase {
         } else {
             XCTFail("Button is not enabled")
         }
+    }
+    
+    func waitFor(element: XCUIElement, timeout: TimeInterval) {
+        XCTAssert(element.waitForExistence(timeout: timeout))
     }
 }

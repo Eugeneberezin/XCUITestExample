@@ -17,7 +17,7 @@ struct ScrollingView: View {
                     LazyHGrid(rows: [gridItem], spacing: 5) {
                         ForEach(0...30, id: \.self) { number in
                             Rectangle()
-                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .center)
+                                .frame(width: 100, height: 100, alignment: .center)
                                 .foregroundColor(.blue)
                             
                         }
